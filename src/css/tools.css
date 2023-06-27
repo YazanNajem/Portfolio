@@ -11,6 +11,7 @@
   padding: 1rem 2rem;
 }
 
+
 h1::selection,
 h2::selection {
   color: #111;
@@ -274,7 +275,7 @@ h2::selection {
 }
 
 /* Skill 22 */
-.skillCards:nth-child(21) {
+.skillCards:nth-child(22) {
   background: url(../assets/skills/terminal.png) no-repeat center center/contain;
 }
 /* End Skill Images */
