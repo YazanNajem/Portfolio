@@ -33,8 +33,7 @@
       <div class="container">
         <!-- Logo -->
         <h1 id="logo">
-          <a href="#"><img src="./assets/logo.png"
-              alt="Yazan's Logo" /></a>
+          <a href="#"><img src="./assets/logo.png" alt="Yazan's Logo" /></a>
         </h1>
         <!-- Navbar links -->
         <ul class="nav-menu">
@@ -42,8 +41,7 @@
           <li><a class="nav-link" href="#">CONTACT</a></li>
           <li><a class="nav-link" href="#">BlOG</a></li>
           <li>
-            <a class="nav-link btn btn-primary" href="#">RESUME <i
-                class="fas fa-arrow-right"></i></a>
+            <a class="nav-link btn btn-primary" href="#">RESUME <i class="fas fa-arrow-right"></i></a>
           </li>
 
           <!-- Toggle switch -->
@@ -54,7 +52,7 @@
               <img class="sun" src="assets/sun.svg" />
             </label>
           </div>
-          
+
           <!-- Hamburger menu -->
         </ul>
         <div class="hamburger">
@@ -419,49 +417,108 @@
   <!-- Counter -->
   <section id="counter" class="container-container countContainer">
     <div class="division"></div>
-    
+
     <div class="countMain">
       <div class="content-text countText">
         <h2>Count</h2>
         <p>Check out my time management</p>
       </div>
-    <article class="counter">
-      <!-- Counter 1 -->
-      <div href="" class="countCard">
-        <i class="icon"><img width="90px" src="/src/assets/counter/clock.png" alt=""></i>
-        <span class="num" data-val="84">000</span>
-        <span class="text">Hours</span>
-    </div>
-    
-      <!-- Counter 2 -->
-      <div href="" class="countCard">
+      <article class="counter">
+        <!-- Counter 1 -->
+        <div href="" class="countCard">
+          <i class="icon"><img width="90px" src="/src/assets/counter/clock.png" alt=""></i>
+          <span class="num" data-val="84">000</span>
+          <span class="text">Hours / Week</span>
+        </div>
+
+        <!-- Counter 2 -->
+        <div href="" class="countCard">
           <i class="icon"><img width="90px" src="/src/assets/counter/heart.png" alt=""></i>
           <span class="infinity"><img width="90px" src="/src/assets/counter/infinity.png" alt=""></span>
-          <span class="text">Software Development Love</span>
-      </div>
-    
-      <!-- Counter 3 -->
-      <div href="" class="countCard">
-        <i class="icon"><img width="90px" src="/src/assets/counter/coffee.png" alt=""></i>
-        <span class="num" data-val="33">000</span>
-        <span class="text">Coffee Cups</span>
+          <span class="text">Software Development Passion</span>
+        </div>
+
+        <!-- Counter 3 -->
+        <div href="" class="countCard">
+          <i class="icon"><img width="90px" src="/src/assets/counter/coffee.png" alt=""></i>
+          <span class="num" data-val="33">000</span>
+          <span class="text">Coffee Cups</span>
+        </div>
+
+        <!-- Counter 4 -->
+        <div href="" class="countCard">
+          <i class="icon"><img width="90px" src="/src/assets/counter/idea.png" alt=""></i>
+          <span class="num" data-val="10000000">000</span>
+          <span class="text">Creative Ideas</span>
+        </div>
+      </article>
     </div>
-    
-      <!-- Counter 4 -->
-      <div href="" class="countCard">
-        <i class="icon"><img width="90px" src="/src/assets/counter/idea.png" alt=""></i>
-        <span class="num" data-val="10000000">000</span>
-        <span class="text">Meals Delivered</span>
-    </div> 
-    </article>
-  </div>
   </section>
   <!-- End Counter -->
 
 
+  <!-- Contact -->
+  <br>
+  <div class="content-text">
+    <h2>Contact Me</h2>
+    <p>Send me an email or scroll down to reach me on social media</p>
+  </div>
+  <section id="contact">
+
+    <div class="row">
+        <div class="eight columns">
+          <form method="post" id="contactForm" name="contactForm">
+            <fieldset>
+              <div>
+                <label htmlFor="contactName">
+                  Name <span class="required">*</span>
+                </label>
+                <input autoComplete="off" type="text" defaultValue="" size="35" id="contactName" name="contactName" />
+              </div>
+
+              <div>
+                <label htmlFor="contactEmail">
+                  Email <span class="required">*</span>
+                </label>
+                <input autoComplete="off" type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" />
+              </div>
+
+              <div>
+                <label htmlFor="contactSubject">Subject</label>
+                <input autoComplete="off" type="text" defaultValue="" size="35" id="contactSubject"
+                  name="contactSubject" />
+              </div>
+
+              <div>
+                <label htmlFor="contactMessage">
+                  Message <span class="required">*</span>
+                </label>
+                <textarea autoComplete="off" cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+              </div>
+
+              <div>
+                <button name="contact_btn" value="Send Email" class="submit" id="contact_btn">Submit</button>
+                <span id="image-loader">
+                  <img alt="" src="~/imgs/loader.gif" />
+                </span>
+              </div>
+            </fieldset>
+          </form>
+
+          <div id="message-warning"> Error boy</div>
+          <div id="message-success">
+            <i class="fa fa-check"></i>Your message was sent, thank you!
+            <br />
+          </div>
+        </div>
+    </div>
+
+  </section>
+  <!--end contact-->
+
 
   <!-- Projects -->
-  <section id="projects" class="project-container container">
+  <!-- <section id="projects" class="project-container container">
     <div class="division"></div>
     <div class="content-text">
       <h2>Projects</h2>
@@ -469,7 +526,6 @@
     </div>
 
     <article class="project">
-      <!-- Project 1 -->
       <div href="" class="card">
         <div class="project-info">
           <div class="project-bio">
@@ -484,7 +540,6 @@
         </div>
       </div>
 
-      <!-- Project 2 -->
       <div href="" class="card">
         <div class="project-info">
           <div class="project-bio">
@@ -499,22 +554,14 @@
         </div>
       </div>
 
-      <!-- Porject 3 -->
       <div href="" class="card">
         <div class="project-info">
           <div class="project-bio">
-            <h3>Project Three</h3>
-            <p>React, Redux, SASS</p>
-          </div>
-
-          <div class="project-link">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            <img src="/src/assets/">
           </div>
         </div>
       </div>
 
-      <!-- Project 4 -->
       <div href="" class="card">
         <div class="project-info">
           <div class="project-bio">
@@ -528,47 +575,18 @@
           </div>
         </div>
       </div>
-
-      <!-- Project 5 -->
-      <div href="" class="card">
-        <div class="project-info">
-          <div class="project-bio">
-            <h3>Project Five</h3>
-            <p>React, Redux, SASS</p>
-          </div>
-
-          <div class="project-link">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 6 -->
-      <div href="" class="card">
-        <div class="project-info">
-          <div class="project-bio">
-            <h3>Project Six</h3>
-            <p>React, Redux, SASS</p>
-          </div>
-
-          <div class="project-link">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-          </div>
-        </div>
-      </div>
     </article>
 
     <a href="#" class="btn btn-secondary" target="_blank">See More <i class="fas fa-arrow-right"></i></a>
-  </section>
+  </section> -->
   <!-- End Projects -->
 
 
 
   <footer id="footer">
     <div class="container">
-      <a href="mailto:yazanbassamnajem@gmail.com">Email me</a>
+      <a href="mailto:yazanbassamnajem@gmail.com" class="btn btn-secondary" target="_blank">Email me<i class="fas fa-arrow-right"></i></a>
+
       <!-- Social links -->
       <div class="social">
         <a href="#" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>

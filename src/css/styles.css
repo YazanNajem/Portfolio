@@ -53,6 +53,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
 }
 
 ul {
@@ -162,6 +163,7 @@ body {
   background-color: var(--card-background);
   margin: 5.5rem 0;
 }
+
 /* About, Projects and Skills */
 #about,
 #projects,
@@ -220,6 +222,7 @@ body {
 .card .project-bio h3 {
   font-size: 0.9rem;
 }
+
 /* End About, Skills and Projects */
 
 
@@ -229,6 +232,7 @@ body {
   padding: 2rem;
 
 }
+
 .counter {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -253,8 +257,8 @@ body {
   background-color: #21242b;
 }
 
-.icon{
-  color: #8B9150;
+.icon {
+  color: var(--primary-color);
   font-size: 2.5em;
   text-align: center;
 }
@@ -271,6 +275,7 @@ span.infinity {
   display: grid;
   place-items: center;
 }
+
 span.text {
   color: #e0e0e0;
   font-size: 1em;
@@ -281,10 +286,164 @@ span.text {
 }
 
 .countText {
-  color:#ffffff;
+  color: #ffffff;
 }
+
 /* End Counter */
 
+/* --text-color Black */
+/* --text-color-two white */
+/* --bg-primary white */
+/* --bg-secondary black */
+
+/* Contact */
+#contact {
+  color: #636363;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#contact .section-head {
+  margin-bottom: 42px;
+}
+
+#contact a:hover,
+#contact a:focus {
+  color: #fff;
+}
+
+#contact h1 {
+  font: 18px/24px 'opensans-bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-color-two);
+  margin-bottom: 6px;
+}
+
+#contact h1 span {
+  display: none;
+}
+
+#contact h1:before {
+  font-family: 'FontAwesome';
+  content: "\f0e0";
+  padding-right: 10px;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: left;
+  float: left;
+  color: var(--text-color-two);
+}
+
+#contact h4 {
+  font: 16px/24px 'Nexa', sans-serif;
+  color: var(--text-color-two);
+  margin-bottom: 6px;
+}
+
+#contact p.lead {
+  font: 18px/36px 'nexa', sans-serif;
+  padding-right: 3%;
+}
+
+#contact .header-col {
+  padding-top: 6px;
+}
+
+/* contact form */
+#contact form {
+  margin-bottom: 30px;
+}
+
+#contact label {
+  font: 15px/24px 'nexa', sans-serif;
+  margin: 12px 0;
+  display: inline-block;
+  float: left;
+  width: 26%;
+  color: var(--text-color);
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+  padding: 10px 20px;
+  background: var(--text-color);
+  margin-bottom: 42px;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  line-height: 24px;
+  width: 65%;
+}
+
+#contact input:focus,
+#contact textarea:focus,
+#contact select:focus {
+  color: var(--text-color-two);
+}
+
+#contact button.submit {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-color-two);
+  background: var(--text-color);
+  border: none;
+  cursor: pointer;
+  height: auto;
+  display: inline-block;
+  border-radius: 0px;
+  margin-left: 26%;
+  padding: 15px 15px;
+}
+
+#contact span.required {
+  color: var(--primary-color);
+  font-size: 13px;
+}
+
+#message-warning,
+#message-success {
+  width: 100%;
+  margin-left: 0;
+}
+
+#message-warning,
+#message-success {
+  display: none;
+  background: #0F0F0F;
+  padding: 24px 24px;
+  margin-bottom: 36px;
+  width: 65%;
+  margin-left: 26%;
+}
+
+#message-warning {
+  color: #D72828;
+}
+
+#message-success {
+  color: #0762f9;
+}
+
+#message-warning i,
+#message-success i {
+  margin-right: 10px;
+}
+
+#image-loader {
+  display: none;
+  position: relative;
+  left: 18px;
+  top: 17px;
+}
+
+fieldset {
+  width: 60vw;
+}
+/* End Contact */
 
 
 /* Footer */
@@ -304,7 +463,6 @@ span.text {
 
 #footer a {
   font-size: 0.8rem;
-  color: #fff;
 }
 
 #footer a:hover {
@@ -331,6 +489,7 @@ span.text {
 /* Responsiveness */
 
 @media (max-width: 1000px) {
+
   .project,
   .skills {
     display: grid;
@@ -350,13 +509,13 @@ span.text {
   .countMain {
     padding: 2rem;
     /* width: 100%; */
-  
+
   }
-  
+
   .countContainer {
     width: 100%;
   }
-  
+
   .countCard {
     width: 100%;
     height: 100%;
@@ -430,6 +589,10 @@ span.text {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  fieldset {
+    width: 85vw;
+  }
 }
 
 @media (max-width: 600px) {
@@ -448,5 +611,9 @@ span.text {
   .header-container .btn {
     border-radius: 5px;
     width: 80%;
+  }
+
+  fieldset {
+    width: 85vw;
   }
 }
