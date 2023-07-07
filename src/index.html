@@ -12,8 +12,10 @@
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Yazan's Portfolio" />
-
+  
   <!-- Link -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
@@ -26,6 +28,7 @@
   <link rel="stylesheet" href="css/tools.css" />
 </head>
 
+
 <body>
   <header id="hero">
     <!-- Navbar -->
@@ -37,11 +40,12 @@
         </h1>
         <!-- Navbar links -->
         <ul class="nav-menu">
+          <li><a class="nav-link" href="#about">ABOUT</a></li>
+          <li><a class="nav-link" href="#skills">SKILLS</a></li>
           <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-          <li><a class="nav-link" href="#">CONTACT</a></li>
-          <li><a class="nav-link" href="#">BlOG</a></li>
+          <li><a class="nav-link" href="#contact">CONTACT</a></li>
           <li>
-            <a class="nav-link btn btn-primary" href="#">RESUME</a>
+            <a class="nav-link btn btn-primary" href = "/src/assets/resume/Yazan Najem.pdf" download = "Yazan's Resume">RESUME</a>
           </li>
 
           <!-- Toggle switch -->
@@ -70,14 +74,12 @@
           <h2>I AM YAZAN NAJEM</h2>
       </div>
       </br>
-      <h4>| Software Engineer & a Full stack Developer |</h4>
+      <h4>| Software Engineer & a Full Stack Developer |</h4>
       </br>
       </br>
-      <a href="https://github.com/" class="btn btn-secondary" target="_blank">Download
-        Resume</a>
-      <a href="https://github.com/" class="btn btn-secondary"
-        target="_blank">&#160;&#160;Connect
-        With Me&#160;&#160;</a>
+      <!-- <a href="https://github.com/" class="btn btn-secondary" target="_blank">Download
+        Resume</a> -->
+      <a href="#contact" class="btn btn-secondary" t>&#160;&#160;Connect With Me&#160;&#160;</a>
     </section>
   </header>
 
@@ -99,7 +101,7 @@
       techs and software; this made me encouraged to read books and blogs regarding software to create full idea of how
       software was made. Now, tech and software is my career, and I am proud of where I am.</h2>
 
-    <a href="#" class="btn btn-secondary" target="_blank">See More <i class="fas fa-arrow-right"></i></a>
+    <a href="https://www.linkedin.com/in/seit-yazannajem/" class="btn btn-secondary" target="_blank">See More <i class="fas fa-arrow-right"></i></a>
   </section>
   <!-- End About -->
 
@@ -172,7 +174,7 @@
       </div>
     </article>
 
-    <a href="#" class="btn btn-secondary" target="_blank">See More <i class="fas fa-arrow-right"></i></a>
+    <a href="https://github.com/YazanNajem" class="btn btn-secondary" target="_blank">See More <i class="fas fa-arrow-right"></i></a>
   </section>
   <!-- End Projects -->
 
@@ -407,8 +409,7 @@
         </div>
       </div>
     </article>
-
-    <a href="#" class="btn btn-secondary" target="_blank">See More <i class="fas fa-arrow-right"></i></a>
+    <div class="division"></div>
   </section>
   <!-- End Skills -->
 
@@ -416,7 +417,6 @@
 
   <!-- Counter -->
   <section id="counter" class="container-container countContainer">
-    <div class="division"></div>
 
     <div class="countMain">
       <div class="content-text countText">
@@ -459,7 +459,7 @@
 
   <!-- Contact -->
   <br>
-  <div class="content-text">
+  <div id="contacts" class="content-text">
     <h2>Contact Me</h2>
     <p>Send me an email or scroll down to reach me on social media</p>
   </div>
@@ -589,9 +589,9 @@
 
       <!-- Social links -->
       <div class="social">
-        <a href="#" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
-        <a href="#" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
-        <a href="#" target="_blank"><img src="./assets/whatsapp-icon.svg" alt="WhatsApp" /></a>
+        <a href="https://www.linkedin.com/in/seit-yazannajem/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
+        <a href="https://github.com/YazanNajem" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        <a href="https://wa.me/00971506206097" target="_blank"><img src="./assets/whatsapp-icon.svg" alt="WhatsApp" /></a>
       </div>
       <!-- Attribution -->
       <div class="attribution">
@@ -605,6 +605,7 @@
       <p>Copyright &copy; Yazan Najem <span id="datee"></span>, All rights reserved</p>
     </div>
   </footer>
+  <script src="js/init.js"></script>
   <script src="js/script.js"></script>
 </body>
 

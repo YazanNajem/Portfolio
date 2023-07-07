@@ -11,13 +11,6 @@
   padding: 1rem 2rem;
 }
 
-
-h1::selection,
-h2::selection {
-  color: #111;
-  background: var(--primary-color);
-}
-
 /* Buttons */
 .btn {
   display: inline-block;

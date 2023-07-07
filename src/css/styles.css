@@ -56,6 +56,11 @@ html {
   border: none;
 }
 
+*::selection{
+  color: #111;
+  background: var(--primary-color);
+}
+
 ul {
   list-style: none;
 }
@@ -158,7 +163,7 @@ body {
 }
 
 .division {
-  width: 80%;
+  width: 95%;
   height: 2px;
   background-color: var(--card-background);
   margin: 5.5rem 0;
@@ -239,10 +244,6 @@ body {
   grid-auto-rows: minmax(250px, auto);
   column-gap: 2rem;
   background-color: #21242b;
-}
-
-.countContainer {
-  /* width: 100%; */
 }
 
 .countCard {
