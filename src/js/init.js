@@ -1,3 +1,7 @@
+// function sendEmail() {
+
+// }
+
 jQuery(document).ready(function ($) {
     var time = 380;
     setTimeout(function () {
@@ -5,13 +9,13 @@ jQuery(document).ready(function ($) {
         btn.on("click", function (e) {
             e.preventDefault()
             var name = $("form#contactForm input#contactName").val();
-            var email = $("form#contactForm input#contactEmail").val();
+            var theEmail = $("form#contactForm input#contactEmail").val();
             var subjet = $("form#contactForm input#contactSubject").val();
             var message = $("form#contactForm textarea#contactMessage").val();
-            var body = 'Client name: ' + name + '<br/> Client email: ' + email + '<br/> Enquiry subject: ' + subjet + '<br/> Enquiry message: ' + message;
+            var body = 'Client name: ' + name + '<br/> Client email: ' + theEmail + '<br/> Enquiry subject: ' + subjet + '<br/> Enquiry message: ' + message;
             console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< hi" + body);
-            // Visit https://smtpjs.com/
-            Email.Send({
+
+            Email.send({
                 Host: "smtp.elasticemail.com",
                 Username: "yazanbn99@gmail.com",
                 Password: "9A7EEB983B53710404478F4B0803E71D21BA",
@@ -26,7 +30,7 @@ jQuery(document).ready(function ($) {
                 $("form#contactForm textarea#contactMessage").val(''),
                 // message => alert(message)
             );
-            return true;
+            return false;
         });
     }, time);
 });
