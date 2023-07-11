@@ -372,6 +372,7 @@ span.text {
 #contact select {
   padding: 10px 20px;
   background: var(--text-color);
+  color: var(--text-color-two);
   margin-bottom: 42px;
   border: 0;
   outline: none;

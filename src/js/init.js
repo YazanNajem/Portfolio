@@ -1,7 +1,3 @@
-// function sendEmail() {
-
-// }
-
 jQuery(document).ready(function ($) {
     var time = 380;
     setTimeout(function () {
@@ -15,6 +11,7 @@ jQuery(document).ready(function ($) {
             var body = 'Client name: ' + name + '<br/> Client email: ' + theEmail + '<br/> Enquiry subject: ' + subjet + '<br/> Enquiry message: ' + message;
             console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< hi" + body);
 
+            // visit smtpjs.com to get your credintials
             Email.send({
                 Host: "smtp.elasticemail.com",
                 Username: "yazanbn99@gmail.com",
