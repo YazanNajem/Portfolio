@@ -444,6 +444,39 @@ span.text {
 
 fieldset {
   width: 60vw;
+  text-align: center;
+}
+
+.location {
+  position: relative;
+  height: fit-content;
+  padding: 0%;
+  margin: 0%;
+}
+
+.img__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--text-color);
+  color: var(--text-color-two);
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.location:hover .img__description{
+  visibility: visible;
+  opacity: 1;
 }
 /* End Contact */
 
@@ -497,6 +530,15 @@ fieldset {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #contact {
+    color: #636363;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -511,7 +553,6 @@ fieldset {
   .countMain {
     padding: 2rem;
     /* width: 100%; */
-
   }
 
   .countContainer {
@@ -528,6 +569,15 @@ fieldset {
     position: relative;
     font-size: 16px;
     background-color: #21242b;
+  }
+
+  #contact {
+    color: #636363;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -595,6 +645,15 @@ fieldset {
   fieldset {
     width: 85vw;
   }
+
+  #contact {
+    color: #636363;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -617,5 +676,14 @@ fieldset {
 
   fieldset {
     width: 85vw;
+  }
+
+  #contact {
+    color: #636363;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
 }
